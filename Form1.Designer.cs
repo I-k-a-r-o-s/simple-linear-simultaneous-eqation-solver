@@ -30,7 +30,6 @@
         {
             this.btnEvaluate = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.lblDisplay1 = new System.Windows.Forms.Label();
             this.lblDisplay2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@
             this.txtInput_d = new System.Windows.Forms.TextBox();
             this.txtInput_m = new System.Windows.Forms.TextBox();
             this.txtInput_n = new System.Windows.Forms.TextBox();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEvaluate
@@ -66,16 +66,6 @@
             this.btnNew.Text = "New";
             this.btnNew.UseVisualStyleBackColor = true;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(421, 317);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Exit";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // lblDisplay1
             // 
@@ -199,11 +189,22 @@
             this.txtInput_n.Size = new System.Drawing.Size(100, 20);
             this.txtInput_n.TabIndex = 16;
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(407, 317);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 17;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(544, 371);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.txtInput_n);
             this.Controls.Add(this.txtInput_m);
             this.Controls.Add(this.txtInput_d);
@@ -218,7 +219,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.lblDisplay2);
             this.Controls.Add(this.lblDisplay1);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnEvaluate);
             this.Name = "Form1";
@@ -232,7 +232,6 @@
 
         private System.Windows.Forms.Button btnEvaluate;
         private System.Windows.Forms.Button btnNew;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label lblDisplay1;
         private System.Windows.Forms.Label lblDisplay2;
         private System.Windows.Forms.Label label3;
@@ -247,6 +246,7 @@
         private System.Windows.Forms.TextBox txtInput_d;
         private System.Windows.Forms.TextBox txtInput_m;
         private System.Windows.Forms.TextBox txtInput_n;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
